@@ -6,7 +6,6 @@
 
 use std::collections::HashMap;
 
-#[allow(dead_code)]
 fn fruit_basket() -> HashMap<String, u32> {
     // TODO: Declare the hash map.
     // let mut basket =

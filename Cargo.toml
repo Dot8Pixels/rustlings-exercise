@@ -206,6 +206,7 @@ panic = "abort"
 unsafe_code = "forbid"
 # You don't need unstable features in Rustlings and shouldn't rely on them while learning Rust
 unstable_features = "forbid"
+dead_code = "allow"
 
 [lints.clippy]
 # You forgot a `todo!()`

@@ -10,7 +10,6 @@
 
 use std::collections::HashMap;
 
-#[allow(dead_code)]
 #[derive(Hash, PartialEq, Eq, Debug)]
 enum Fruit {
     Apple,
@@ -20,7 +19,6 @@ enum Fruit {
     Pineapple,
 }
 
-#[allow(dead_code)]
 fn fruit_basket(basket: &mut HashMap<Fruit, u32>) {
     let fruit_kinds = [
         Fruit::Apple,

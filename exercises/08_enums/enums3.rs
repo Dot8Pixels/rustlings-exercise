@@ -1,10 +1,8 @@
-#[allow(dead_code)]
 struct Point {
     x: u64,
     y: u64,
 }
 
-#[allow(dead_code)]
 enum Message {
     // TODO: Implement the message variant types based on their usage below.
     Resize { width: u64, height: u64 },
@@ -14,7 +12,6 @@ enum Message {
     Quit,
 }
 
-#[allow(dead_code)]
 struct State {
     width: u64,
     height: u64,
@@ -26,33 +23,27 @@ struct State {
 }
 
 impl State {
-    #[allow(dead_code)]
     fn resize(&mut self, width: u64, height: u64) {
         self.width = width;
         self.height = height;
     }
 
-    #[allow(dead_code)]
     fn move_position(&mut self, point: Point) {
         self.position = point;
     }
 
-    #[allow(dead_code)]
     fn echo(&mut self, s: String) {
         self.message = s;
     }
 
-    #[allow(dead_code)]
     fn change_color(&mut self, red: u8, green: u8, blue: u8) {
         self.color = (red, green, blue);
     }
 
-    #[allow(dead_code)]
     fn quit(&mut self) {
         self.quit = true;
     }
 
-    #[allow(dead_code)]
     fn process(&mut self, message: Message) {
         // TODO: Create a match expression to process the different message
         // variants using the methods defined above.
