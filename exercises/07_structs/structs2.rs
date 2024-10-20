@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 #[derive(Debug)]
 struct Order {
     name: String,
@@ -9,6 +10,7 @@ struct Order {
     count: u32,
 }
 
+#[allow(dead_code)]
 fn create_order_template() -> Order {
     Order {
         name: String::from("Bob"),
@@ -17,7 +19,7 @@ fn create_order_template() -> Order {
         made_by_mobile: false,
         made_by_email: true,
         item_number: 123,
-        count: 0,
+        count: 1,
     }
 }
 
@@ -35,6 +37,16 @@ mod tests {
 
         // TODO: Create your own order using the update syntax and template above!
         // let your_order =
+
+        let your_order = Order {
+            name: String::from("Hacker in Rust"),
+            year: order_template.year,
+            made_by_phone: order_template.made_by_phone,
+            made_by_mobile: order_template.made_by_mobile,
+            made_by_email: order_template.made_by_email,
+            item_number: order_template.item_number,
+            count: order_template.count,
+        };
 
         assert_eq!(your_order.name, "Hacker in Rust");
         assert_eq!(your_order.year, order_template.year);
